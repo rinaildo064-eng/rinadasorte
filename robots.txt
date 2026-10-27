@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rinaildo064-eng.github.io/rinadasorte/sitemap.xml

@@ -1,6 +1,36 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>RINA DÁ SORTE!</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RINA DÁ SORTE! | Gerador e conferidor da Mega-Sena</title>
+<meta name="description" content="Gere desdobramentos e fechamentos da Mega-Sena, monte apostas múltiplas, confira seus jogos com o resultado e imprima em A4 ou papel térmico. Grátis.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<!-- Para verificar o site no Google Search Console pelo método "Tag HTML": cole aqui a metatag que o Google fornecer (começa com <meta name="google-site-verification" ...>) -->
+<link rel="canonical" href="https://rinaildo064-eng.github.io/rinadasorte/">
+<meta name="theme-color" content="#0B3F2C">
+<meta name="application-name" content="Rina Dá Sorte">
+<meta name="apple-mobile-web-app-title" content="Rina Dá Sorte">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="48x48" href="icons/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="RINA DÁ SORTE!">
+<meta property="og:title" content="RINA DÁ SORTE! | Gerador e conferidor da Mega-Sena">
+<meta property="og:description" content="Gere desdobramentos e fechamentos da Mega-Sena, monte apostas múltiplas, confira seus jogos com o resultado e imprima em A4 ou papel térmico. Grátis.">
+<meta property="og:url" content="https://rinaildo064-eng.github.io/rinadasorte/">
+<meta property="og:image" content="https://rinaildo064-eng.github.io/rinadasorte/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Escudo verde e dourado com a seta e o nome RINA DÁ SORTE!">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RINA DÁ SORTE! | Gerador e conferidor da Mega-Sena">
+<meta name="twitter:description" content="Gere desdobramentos e fechamentos da Mega-Sena, monte apostas múltiplas, confira seus jogos com o resultado e imprima em A4 ou papel térmico. Grátis.">
+<meta name="twitter:image" content="https://rinaildo064-eng.github.io/rinadasorte/og-image.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "RINA DÁ SORTE!", "url": "https://rinaildo064-eng.github.io/rinadasorte/", "description": "Gere desdobramentos e fechamentos da Mega-Sena, monte apostas múltiplas, confira seus jogos com o resultado e imprima em A4 ou papel térmico. Grátis.", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Qualquer navegador", "inLanguage": "pt-BR", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "BRL"}, "creator": {"@type": "Organization", "name": "Rina Soluções Tecnológicas"}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Figtree:wght@400;500;600;700&display=swap">
@@ -322,6 +352,17 @@ label.lbl { display: block; font-weight: 600; font-size: .92rem; margin-bottom: 
 .toast.show { opacity: 1; transform: translate(-50%, 0); }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } .toast { transform: translate(-50%, 0); } }
 
+.about { display: grid; gap: 14px; }
+.about h2 { font-size: clamp(1.25rem, 3.4vw, 1.6rem); line-height: 1.2; font-weight: 800; }
+.about > p { color: var(--ink-2); max-width: 70ch; }
+.faq { display: grid; gap: 8px; }
+.faq details { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); padding: 0 16px; }
+.faq summary { cursor: pointer; padding: 14px 0; font-weight: 700; font-family: var(--font-display); list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: '+'; color: var(--gold-text); font-size: 1.3rem; line-height: 1; }
+.faq details[open] summary::after { content: '\2212'; }
+.faq details p { padding: 0 0 14px; color: var(--ink-2); max-width: 70ch; }
+
 /* ============================ TERMOS DE USO ============================ */
 .terms {
   position: fixed; inset: 0; z-index: 100; display: grid; place-items: center;
@@ -350,7 +391,7 @@ label.lbl { display: block; font-weight: 600; font-size: .92rem; margin-bottom: 
   body > *:not(#printSheet) { display: none !important; }
   html, body { background: #fff !important; color: #000 !important; }
   #printSheet { display: block !important; color: #000; font-family: var(--font-body); }
-  #printSheet h1 { font: 800 20pt var(--font-display); letter-spacing: .02em; }
+  #printSheet .p-h1 { font: 800 20pt var(--font-display); letter-spacing: .02em; }
   #printSheet .p-sub { font-size: 10pt; margin-top: 2pt; }
   #printSheet .p-draw { margin-top: 8pt; font-size: 10.5pt; }
   #printSheet ol { list-style: none; margin: 12pt 0 0; padding: 0; }
@@ -365,7 +406,7 @@ label.lbl { display: block; font-weight: 600; font-size: .92rem; margin-bottom: 
   #printSheet.fmt-a4 ol { columns: 2; column-gap: 24pt; }
   /* Papel térmico: uma coluna estreita, fonte simples e sem bordas arredondadas */
   #printSheet.fmt-t80, #printSheet.fmt-t58 { font-family: ui-monospace, 'Courier New', monospace; }
-  #printSheet.fmt-t80 h1, #printSheet.fmt-t58 h1 { font-size: 15pt; text-align: center; }
+  #printSheet.fmt-t80 .p-h1, #printSheet.fmt-t58 .p-h1 { font-size: 15pt; text-align: center; }
   #printSheet.fmt-t80 .p-sub, #printSheet.fmt-t58 .p-sub { text-align: center; }
   #printSheet.fmt-t80 li, #printSheet.fmt-t58 li { border-bottom: 1px dashed #000; }
   #printSheet.fmt-t80 .p-n, #printSheet.fmt-t58 .p-n { border: 0; border-radius: 0; font: 700 12pt ui-monospace, 'Courier New', monospace; min-width: 0; padding: 0 1pt; }
@@ -376,6 +417,8 @@ label.lbl { display: block; font-weight: 600; font-size: .92rem; margin-bottom: 
 </style>
 <style id="pageStyle">@page { size: A4; margin: 12mm; }</style>
 
+</head>
+<body>
 <div class="app">
   <header class="top">
     <div class="wrap">
@@ -517,6 +560,18 @@ label.lbl { display: block; font-weight: 600; font-size: .92rem; margin-bottom: 
       </div>
     </div>
 
+    <section class="about" aria-labelledby="t5">
+      <h2 id="t5">Gerador e conferidor da Mega-Sena, grátis e sem cadastro</h2>
+      <p>O RINA DÁ SORTE! combina as dezenas que você escolhe em desdobramentos, apostas múltiplas e fechamentos com garantia, confere os jogos com o resultado do sorteio e imprime tudo em A4 ou papel térmico.</p>
+      <div class="faq">
+        <details><summary>O que é um desdobramento da Mega-Sena?</summary><p>É a divisão das dezenas que você escolheu em vários jogos menores. Com 8 dezenas, por exemplo, é possível montar 28 jogos diferentes de 6 dezenas. O site combina suas dezenas em jogos de 6 a 10 dezenas.</p></details>
+        <details><summary>O que é a aposta múltipla?</summary><p>É um único jogo com mais de 6 dezenas, até 15 neste site. Ele equivale a várias apostas simples: 8 dezenas, por exemplo, equivalem a 28 apostas de 6 dezenas.</p></details>
+        <details><summary>O que é o fechamento com garantia?</summary><p>É um conjunto de jogos montado para que, se as 6 dezenas sorteadas estiverem todas entre as que você escolheu, pelo menos um jogo tenha quadra ou quina, conforme a garantia escolhida. Isso vale somente nessa condição. O site não garante prêmio nem aumenta a chance de as dezenas sorteadas estarem entre as suas.</p></details>
+        <details><summary>Como conferir meus jogos com o resultado?</summary><p>Digite as 6 dezenas sorteadas, ou cole todas de uma vez. O site mostra os acertos de cada jogo e quantas quadras, quinas e senas você fez.</p></details>
+        <details><summary>Dá para imprimir os jogos?</summary><p>Sim, em papel A4 ou em papel térmico de 80 mm ou 58 mm. Na impressão saem apenas os jogos.</p></details>
+        <details><summary>O RINA DÁ SORTE! vende apostas? É gratuito?</summary><p>O uso é gratuito e o site não vende apostas. Para apostar, use os canais oficiais das Loterias Caixa. A contribuição via Pix é voluntária.</p></details>
+      </div>
+    </section>
     <!-- ===================== APOIO VOLUNTÁRIO ===================== -->
     <section class="support" aria-labelledby="t4">
       <div class="support-in">
@@ -956,7 +1011,7 @@ window.ASSETS = {
     var draw = S.checked ? drawNumbers() : null;
     var d = new Date();
     var data = pad(d.getDate()) + '/' + pad(d.getMonth() + 1) + '/' + d.getFullYear();
-    var h = '<h1>' + CONFIG.NOME_APP + '</h1><p class="p-sub">Mega-Sena · ' + S.games.length + (S.games.length === 1 ? ' jogo' : ' jogos') + ' · ' + data + '</p>';
+    var h = '<div class="p-h1">' + CONFIG.NOME_APP + '</div><p class="p-sub">Mega-Sena · ' + S.games.length + (S.games.length === 1 ? ' jogo' : ' jogos') + ' · ' + data + '</p>';
     if (draw) h += '<p class="p-draw"><b>Resultado:</b> ' + draw.slice().sort(asc).map(pad).join(' ') + '</p>';
     h += '<ol>' + S.games.map(function (g, i) {
       var hits = draw ? hitsOf(g, draw) : null;
@@ -1218,5 +1273,6 @@ window.ASSETS = {
   if (!termosAceitos()) abrirTermos(false);
 })();
 </script>
-
-</body></html>
+<noscript><p style="padding:16px">Ative o JavaScript para usar o RINA DÁ SORTE!, gerador e conferidor de combinações da Mega-Sena.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,42 @@
+RINA DÁ SORTE! - PACOTE PARA PUBLICAR NA INTERNET
+=================================================
+
+O QUE TEM AQUI
+  index.html            a página completa (já com título, descrição e textos para o Google)
+  manifest.webmanifest  nome e ícones do atalho no celular
+  favicon.ico, apple-touch-icon.png, icons/   ícones (aba do navegador, iPhone, Android)
+  og-image.jpg          imagem que aparece quando o link é compartilhado (WhatsApp, redes sociais)
+  robots.txt, sitemap.xml   arquivos que o Google lê
+
+PASSO 1 - ATUALIZAR O SITE NO GITHUB
+  1. Descompacte este arquivo .zip no seu computador ou celular.
+  2. Abra o repositório "rinadasorte" no GitHub, toque em "Add file" > "Upload files".
+  3. Envie TODOS os arquivos, incluindo a pasta "icons" (o index.html e os demais
+     ficam na raiz do repositório, substituindo os antigos).
+  4. Clique em "Commit changes". Em 1 a 2 minutos o site em
+     https://rinaildo064-eng.github.io/rinadasorte/ já aparece atualizado.
+  O endereço do site já está preenchido em todos os arquivos.
+
+PASSO 2 - AVISAR O GOOGLE
+  1. Entre em https://search.google.com/search-console e clique em "Adicionar propriedade".
+  2. Escolha "Prefixo do URL" e digite:  https://rinaildo064-eng.github.io/rinadasorte/
+  3. Na confirmação, escolha "Tag HTML", copie a metatag que o Google mostrar e cole no
+     index.html no lugar indicado pelo comentário (logo abaixo da linha "canonical").
+     Salve no GitHub, espere 1 minuto e clique em "Verificar".
+  4. Em "Sitemaps", envie:  sitemap.xml
+  5. Em "Inspeção de URL", cole o endereço da página e clique em "Solicitar indexação".
+  O Google pode levar de alguns dias a algumas semanas para listar a página, e ninguém
+  consegue garantir a posição nos resultados.
+  Observação: o robots.txt só é lido na raiz do domínio github.io, então aqui ele não é
+  necessário. Pode mantê-lo sem problema.
+
+ATALHO NO CELULAR (com o ícone do escudo e o nome "Rina Dá Sorte")
+  Android (Chrome): menu de três pontos > "Adicionar à tela inicial" ou "Instalar app".
+  iPhone (Safari):  botão Compartilhar > "Adicionar à Tela de Início".
+  Se você já criou um atalho antes, apague e crie de novo: o celular guarda o ícone antigo.
+
+IMPRESSÃO
+  No site publicado, o botão "Imprimir jogos" abre a impressão normalmente.
+
+TERMOS DE USO
+  O aceite aparece na primeira visita. O texto está no bloco id="terms" do index.html.
